@@ -10,7 +10,7 @@ function PageCover({
   Des: String;
 }) {
   return (
-    <section className="bg-[#fafaf5] dark:bg-gray-900 max-w-screen-2xl mx-auto">
+    <section className="max-w-screen-2xl mx-auto mt-0">
       <div
         className="relative overflow-hidden bg-cover  bg-no-repeat"
         style={{
