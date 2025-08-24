@@ -1,14 +1,9 @@
 import {
-  DesignServices,
-  DesignServicesOutlined,
-  DesignServicesRounded,
-  DeviceHubRounded,
-  DirectionsCar,
-  DirectionsCarOutlined,
-  DirectionsCarRounded,
-  Map,
-  MapRounded,
-} from "@mui/icons-material";
+  Settings,
+  Car,
+  Users,
+  MapPin,
+} from "lucide-react";
 import React from "react";
 // import Link from "next/link";
 function Section2() {
@@ -16,22 +11,22 @@ function Section2() {
     {
       Title: "Book Online, by Phone, or In Person",
       Dis: "Choose your preferred booking method: Online for convenience, by Phone for personalized assistance, or In Person for a hands-on experience. Your reservation, your way.",
-      icon: <DesignServicesRounded sx={{ fontSize: 40 }} />,
+      icon: <Settings size={40} />,
     },
     {
       Title: "Receive Confirmation",
       Dis: "Get instant confirmation of your booking details, ensuring a hassle-free experience.",
-      icon: <DirectionsCarRounded sx={{ fontSize: 40 }} />,
+      icon: <Car size={40} />,
     },
     {
       Title: "Professional Match-Up",
       Dis: "Our expert chauffeurs are assigned, guaranteeing skilled professionals for your journey.",
-      icon: <DeviceHubRounded sx={{ fontSize: 40 }} />,
+      icon: <Users size={40} />,
     },
     {
       Title: "Enjoy Your Ride",
       Dis: "Relax and indulge in a seamless and comfortable journey, knowing that your transportation needs are in capable hands.",
-      icon: <MapRounded sx={{ fontSize: 40 }} />,
+      icon: <MapPin size={40} />,
     },
   ];
   return (

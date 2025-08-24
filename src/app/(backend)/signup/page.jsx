@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import axios from "axios";
-import { toast } from "react-hot-toast";
+import { toast, ToastContainer } from "react-toastify";
 
 export default function SignupPage() {
   const router = useRouter();
@@ -139,6 +139,7 @@ export default function SignupPage() {
           </div>
         </div>
       </div>
+      <ToastContainer/>
     </>
   );
 }

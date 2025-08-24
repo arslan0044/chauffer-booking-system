@@ -1,9 +1,8 @@
 "use client";
-import Link from "next/link";
 import React, { useEffect } from "react";
 import { useRouter } from "next/navigation";
-import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
+import { loginUser } from "@/lib/actions";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -17,11 +16,17 @@ export default function LoginPage() {
   const onLogin = async () => {
     try {
       setLoading(true);
-      const response = await axios.post("/api/users/login", user);
-      console.log("Login success", response.data);
+      const result = await loginUser(user.email, user.password);
+
+      if (result.success) {
+        console.log("Login success", result.message);
         toast.success("Login success");
-      router.push("/dashboard");
-    } catch (error:any) {
+        router.push("/dashboard");
+      } else {
+        console.log("Login failed", result.error);
+        toast.error("Login Failed! Please Check Your Email or Password");
+      }
+    } catch (error: any) {
       console.log("Login failed", error.message);
       toast.error("Login Failed! Please Check Your Email or Password");
     } finally {
@@ -101,17 +106,10 @@ export default function LoginPage() {
                 </div>
               </div>
             </div>
-            {/* <div className="w-full flex justify-center">
-              <Link
-                href="/signup"
-                className="flex items-center bg-white border border-gray-300 rounded-lg shadow-md px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
-              >
-                Visit Signup page
-              </Link>
-            </div> */}
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 }

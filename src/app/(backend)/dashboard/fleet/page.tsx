@@ -1,21 +1,34 @@
 "use client";
-import React from "react";
+import React, { useRef, useState } from "react";
 import Tabal from "../../../../components/Dashboard/services/Table";
-import { useGetFleetsQuery } from "@/redux/services/date";
-import Link from "next/link";
+import Dailogbox from "./NewCustomer";
+import { ToastContainer } from "react-toastify";
+
 function DashboardFleetPage() {
+  const [newFleet, setNewFleet] = useState(false);
+  const state = useRef();
+  
+  const Cansal = (chose: boolean) => {
+    if (chose) {
+      setNewFleet(false);
+    }
+  };
+
   return (
-    <>
-      <div className=" flex justify-between py-2 ">
-        <div> <h3 className=" text-3xl font-bold">Fleet List</h3></div>
-        <div>
-          <Link className=" bg-primary-main text-primary-dark px-5 py-2 text-2xl rounded-lg hover:bg-blue-900" href={"#"}>
+    <div className=" max-w-screen-xl mx-auto">
+      <div className=" flex justify-between py-2 px-0.5 mt-5">
+        <h3 className=" text-4xl font-bold">Fleet List</h3>
+        <button
+          className=" bg-primary-main text-primary-dark px-5 py-2 text-xl rounded-lg hover:bg-blue-900"
+          onClick={() => setNewFleet(true)}
+        >
           + New Fleet
-          </Link>
-          </div>
+        </button>
       </div>
       <Tabal />
-    </>
+      {newFleet && <Dailogbox onDailog={Cansal} />}
+      <ToastContainer />
+    </div>
   );
 }
 

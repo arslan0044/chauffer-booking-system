@@ -1,8 +1,9 @@
 import { connect } from "../../../dbConfig/dbConfig";
 import Service from "../../../models/fleetModel";
-
+import path from "path";
 connect();
 import { NextRequest, NextResponse } from "next/server";
+import { writeFile } from "fs/promises";
 
 export async function GET() {
   try {
@@ -17,15 +18,20 @@ export async function POST(req: NextRequest, res: NextResponse) {
   try {
     const data = await req.json();
     const { doors, model, price, seats, type, img } = data;
-    console.log(data);
+    const byteLength = await img.arrayBuffer();
+    const bufferData = Buffer.from(byteLength);
+    const pathOfImage = `./public/FleetsImages/${path.basename(img.name)}`;
+    // const img = ""
+    // writeFile(pathOfImage, bufferData);
+    console.log(pathOfImage, bufferData);
 
     const newService = new Service({
-      doors,
       model,
       price,
-      seats,
       type,
-      img,
+      doors,
+      seats,
+      img:pathOfImage,
     });
     const savedService = await newService.save();
     console.log(savedService);

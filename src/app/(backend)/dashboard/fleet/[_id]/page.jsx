@@ -1,36 +1,38 @@
 "use client";
-// import { axios } from "axios";
-import React, { useState, useEffect,  } from "react";
-import Spinner from "../../../../../components/Spinner"
+import React, { useState, useEffect } from "react";
+import Spinner from "../../../../../components/Spinner";
+import { getFleetById } from "@/lib/actions";
+
 function FleetPage({ params }) {
-  const [data, setData] = useState([]);
-  const [imgdata,setImgData]=useState(null)
-  const onSubmithandler = async (e)=>{
-    e.preventDefault()
-    if(!imgdata){
-      alert("Please Upload Image")
-    }
-    console.log({imgdata})
-    const formData= new FormData();
-    formData.append("image",imgdata)
-    const response = await fetch(`/api/gallery`,{
-      method:"POST",
-      body: formData
-    })
-    const data = response.data;
-  }
+  const [data, setData] = useState({});
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const getData = async () => {
-      const response = await fetch(`/api/fleet/${params._id}`, {
-        method: "GET",
-      });
-      const data = await response.json();
-      setData(data);
+      try {
+        setIsLoading(true);
+        const result = await getFleetById(params._id);
+        
+        if (result.success) {
+          setData(result.data);
+        } else {
+          setError(result.error);
+        }
+      } catch (err) {
+        setError(err.message);
+        console.error("Error fetching fleet:", err);
+      } finally {
+        setIsLoading(false);
+      }
     };
 
     getData();
-  }, []);
+  }, [params._id]);
+
+  if (isLoading) return <Spinner />;
+  if (error) return <div>Error: {error}</div>;
+
   return (
     <section className="">
       <div className=" grid grid-cols-3">

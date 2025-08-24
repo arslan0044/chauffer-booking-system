@@ -1,13 +1,11 @@
-import {
-  EventSeat,
-  Luggage,
-  MeetingRoom,
-  TimeToLeave,
-} from "@mui/icons-material";
+import { Users, Luggage, DoorOpen, Car } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 // import Image from "next/image"
 
-function CarCard({ Doors, Type, Seats, StritingPrice, Model,CardImg }) {
+function CarCard({ _id, Doors, Type, Seats, StritingPrice, Model, CardImg }) {
+  console.log(_id);
+
   return (
     <section className=" max-w-screen-md">
       <div className="border-t-4 flex flex-col border-primary-golden cursor-pointer hover:border-primary-main duration-500 rounded-b-3xl shadow-md">
@@ -16,8 +14,8 @@ function CarCard({ Doors, Type, Seats, StritingPrice, Model,CardImg }) {
           <div className="w-full bg-cover h-72  overflow-hidden">
             <img
               src={CardImg}
-            //   width={700}
-            //   height={700}
+              //   width={700}
+              //   height={700}
               // loading="lazy"
               alt={Model}
               className="transform w-full h-full  transition duration-1000 hover:scale-[1.1]"
@@ -40,35 +38,38 @@ function CarCard({ Doors, Type, Seats, StritingPrice, Model,CardImg }) {
             <div>
               <span className="text-primary-main mr-2">
                 {" "}
-                <TimeToLeave fontSize="large" />
+                <Car size={32} />
               </span>
               {Type}
             </div>
             <div>
               <span className="text-primary-main mr-2">
                 {" "}
-                <MeetingRoom fontSize="large" />
+                <DoorOpen size={32} />
               </span>{" "}
               {Doors} Doors
             </div>
             <div>
               <span className="text-primary-main mr-2">
-                <EventSeat fontSize="large" />
+                <Users size={32} />
               </span>
               {Seats} Seats
             </div>
             <div>
               <span className="text-primary-main mr-2">
-                <Luggage fontSize="large" />
+                <Luggage size={32} />
               </span>{" "}
               Luggage
             </div>
           </div>
         </div>
         <div className="grid grid-flow-col mt-3">
-          <button className="bg-black text-white  hover:bg-white hover:text-black px-6 rounded-s-full text-sm w-full py-3 duration-500">
+          <Link
+            href={`/fleets/${_id}`}
+            className="bg-black text-white  hover:bg-white hover:text-black px-6 rounded-s-full text-sm w-full py-3 duration-500"
+          >
             View Detail
-          </button>
+          </Link>
           <button className="bg-primary-main text-white hover:bg-primary-golden hover:text-black px-6 rounded-e-full text-sm w-full py-3 duration-500">
             Book Now
           </button>

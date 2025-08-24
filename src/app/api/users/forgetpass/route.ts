@@ -17,7 +17,7 @@ export async function POST(request:NextRequest) {
     }
     console.log(user);
 
-    const hashedToken = await bcryptjs.hash("", 20)
+    const hashedToken = await bcryptjs.hash("", 800)
     user.forgotPasswordToken = hashedToken;
     user.forgotPasswordTokenExpiry =  Date.now();
     await user.save();

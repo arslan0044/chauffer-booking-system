@@ -1,9 +1,9 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import GallerySection from "../../../components/Home/GallerySection";
+import GallerySection from "../../../../components/Home/GallerySection";
 
 export default function page() {
-  //   const [data, setData] = useState([]);
+    const [data, setData] = useState([]);
   const [imgdata, setImgData] = useState(null);
   const onSubmithandler = async (e) => {
     e.preventDefault();

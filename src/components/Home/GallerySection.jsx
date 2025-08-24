@@ -1,9 +1,29 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { useGetGalleryQuery } from "@/redux/services/date";
+import { getGallery } from "@/lib/actions";
+
 function GallerySection() {
-  const { isLoading, data, error } = useGetGalleryQuery();
+  const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    async function fetchGallery() {
+      try {
+        setIsLoading(true);
+        const galleryData = await getGallery();
+        setData(galleryData);
+      } catch (err) {
+        setError(err);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+
+    fetchGallery();
+  }, []);
+
   return (
     <div>
       {error ? (

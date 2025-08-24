@@ -1,22 +1,34 @@
-'use client'
+"use client";
 import Navbar from "../components/Navbar";
 import HomeSlider from "../components/Home/HomeSlider";
 import Image from "next/image";
 import GallerySection from "../components/Home/GallerySection";
-// import  {useShowFleetQuery}  from "@/provider/redux/services/apiSlice";
+import Footer from "../components/Footer";
+import CarsCardSection from "@/components/Home/CarsCardSection";
+import Section1 from "../components/Section1";
+import TextSection from "../components/Home/TextSection";
+import WhyChoice from "../components/Home/WhyChoice";
+import Section2 from "../components/Section2";
+import CTASection from "@/components/CTASection";
+// import GallerySection from "../components/Home/GallerySection";
 
 export default function Home() {
-  const cdata = { Name: "luxury chauffeur", Email: "info@citisolution.com" };
-  // const { isLoading, data, isError } = useShowFleetQuery;
+  const data = { Name: "luxury chauffeur", Email: "info@citisolution.com" };
   return (
     <>
       <section>
-        <Navbar Name={cdata.Name} />
+        <Navbar Name={data.Name} />
         <main className="mt-[40px] mx-auto w-full py-6 lg:py-8 bg-white dark:bg-gray-900">
           <HomeSlider />
-          <GallerySection/>
+          <CarsCardSection />
+          <TextSection />
+          <WhyChoice />
+          <Section1 />
+          <Section2 />
+          <GallerySection />
         </main>
-        {/* <Footer Name={data.Name} email={data.Email} /> */}
+          <CTASection />
+        <Footer Name={data.Name} email={data.Email} />
       </section>
     </>
   );

@@ -1,3 +1,2920 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  
+  .animate-slide-in-left {
+    animation: slideInLeft 0.8s ease-out forwards;
+  }
+  
+  .animate-slide-in-right {
+    animation: slideInRight 0.8s ease-out forwards;
+  }
+  
+  .animate-slide-in-up {
+    animation: slideInUp 0.6s ease-out forwards;
+  }
+  
+  .animate-shimmer {
+    animation: shimmer 2s infinite linear;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.4s ease-out;
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/* Loading Page Specific Styles */
+.loading-page {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+/* @media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-ping,
+  .animate-shimmer
+} */

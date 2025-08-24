@@ -2,20 +2,32 @@
 import React from "react";
 import CarCard from "../CarCard";
 import { useState, useEffect } from "react";
+import { getFleets } from "@/lib/actions";
+
 function FleetPage() {
   const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const getData = async () => {
-      const response = await fetch("/api/fleet", {
-        method: "GET",
-      });
-      const data = await response.json();
-      setData(data);
+      try {
+        setIsLoading(true);
+        const fleetsData = await getFleets();
+        setData(fleetsData);
+      } catch (err) {
+        setError(err);
+        console.error("Error fetching fleets:", err);
+      } finally {
+        setIsLoading(false);
+      }
     };
 
     getData();
   }, []);
+
+  if (isLoading) return <div>Loading fleets...</div>;
+  if (error) return <div>Error loading fleets</div>;
 
   const fleetsData = data;
   return (

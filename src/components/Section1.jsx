@@ -1,4 +1,4 @@
-import { Done, TimeToLeave } from "@mui/icons-material";
+import { Check, Car } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 function Section1() {
@@ -34,7 +34,7 @@ function Section1() {
           <div className="grid grid-cols-2">
             {ServiceList.map((service, index) => (
               <div className="text-primary-main md:my-4" key={index}>
-                <Done />
+                <Check size={20} />
                 <span className="text-black text-xs md:ms-3">{service}</span>
               </div>
             ))}
@@ -44,7 +44,7 @@ function Section1() {
             className="inline-flex items-center mt-4 justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-full bg-[#1565C0] hover:bg-primary-golden hover:text-black focus:ring-4 focus:ring-blue-300 duration-500 dark:focus:ring-blue-900"
           >
             <span className=" mr-1">
-              <TimeToLeave fontSize="small" />
+              <Car size={16} />
             </span>
             Book Now
           </Link>
