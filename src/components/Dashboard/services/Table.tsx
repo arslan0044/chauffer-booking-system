@@ -153,13 +153,15 @@ export default function Table() {
               </td>
               <td className="px-6 py-4">
                 <div className="flex space-x-2">
-                  <Link href={`/dashboard/fleet/${fleet._id}`}>
+                  <Link href={`/fleets/${fleet._id}`} target="_blank">
                     <button className="text-blue-600 hover:text-blue-900">
                       <Eye size={16} />
                     </button>
                   </Link>
                   <button className="text-green-600 hover:text-green-900">
-                    <Edit size={16} />
+                     <Link href={`/dashboard/fleet/${fleet._id}`}>
+                      <Edit size={16} />
+                    </Link>
                   </button>
                   <button
                     onClick={() =>

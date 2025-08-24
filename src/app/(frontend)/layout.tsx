@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 // import { Inter } from "next/font/google";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import CTASection from "@/components/CTASection";
+// import CTASection from "@/components/CTASection";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +23,7 @@ export default function RootLayout({
       <Navbar Name={data.Name} />
       <main className="mt-[50px] mx-auto w-full py-6 lg:py-8 bg-white dark:bg-gray-900">
         {children}
-        <CTASection />
+        {/* <CTASection /> */}
       </main>
       <Footer Name={data.Name} email={data.Email} />
     </section>

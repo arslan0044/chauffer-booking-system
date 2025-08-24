@@ -27,7 +27,20 @@ export default function Home() {
           <Section2 />
           <GallerySection />
         </main>
-          <CTASection />
+        <CTASection
+          title="Ready to Experience Luxury?"
+          description="   Discover our premium fleet and book your next luxury transportation experience with us."
+          button1={{
+            text: "Explore Our Fleet",
+            link: "/fleets",
+            type: "primary",
+          }}
+          button2={{
+            text: "Contact Us",
+            link: "/contact",
+            type: "secondary",
+          }}
+        />
         <Footer Name={data.Name} email={data.Email} />
       </section>
     </>

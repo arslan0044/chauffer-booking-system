@@ -1,7 +1,10 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { Metadata } from 'next';
+import React from "react";
+import Image from "next/image";
+// import Link from 'next/link';
+// import { Metadata } from 'next';
+import CTASection from "@/components/CTASection";
+import HeroSection from "@/components/HeroSection";
+
 // import Navbar from '@/components/Navbar';
 // import Footer from '@/components/Footer';
 
@@ -29,19 +32,11 @@ export default function AboutPage() {
       {/* <Navbar Name={data.Name} /> */}
       <main className="mt-[40px] bg-white dark:bg-gray-900">
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-primary-main via-primary-lite to-primary-main">
-          <div className="absolute inset-0 bg-black/30"></div>
-          <div className="relative max-w-screen-xl mx-auto px-4 py-24 lg:py-32">
-            <div className="text-center text-white animate-fade-in">
-              <h1 className="text-4xl md:text-6xl xl:text-7xl font-Saira font-extrabold mb-6 underline underline-offset-[1.5rem] decoration-primary-golden">
-                About Our Story
-              </h1>
-              <p className="text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed opacity-90">
-                Delivering exceptional luxury transportation experiences with unmatched professionalism and elegance
-              </p>
-            </div>
-          </div>
-        </section>
+        <HeroSection
+          title="About Our Story"
+          description="Delivering exceptional luxury transportation experiences with
+                unmatched professionalism and elegance"
+        />
 
         {/* Vision Section */}
         <section className="py-16 lg:py-24 bg-primary-dark">
@@ -52,10 +47,16 @@ export default function AboutPage() {
                   Our Vision
                 </h2>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  To be the world's most trusted luxury chauffeur service, setting the standard for excellence in premium transportation. We envision a future where every journey becomes an extraordinary experience, combining cutting-edge technology with timeless elegance.
+                  To be the world's most trusted luxury chauffeur service,
+                  setting the standard for excellence in premium transportation.
+                  We envision a future where every journey becomes an
+                  extraordinary experience, combining cutting-edge technology
+                  with timeless elegance.
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Our commitment extends beyond transportation – we create moments of luxury, comfort, and peace of mind for discerning clients who value quality and sophistication.
+                  Our commitment extends beyond transportation – we create
+                  moments of luxury, comfort, and peace of mind for discerning
+                  clients who value quality and sophistication.
                 </p>
               </div>
               <div className="relative animate-slide-in-right">
@@ -93,10 +94,16 @@ export default function AboutPage() {
                   Our Mission
                 </h2>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  To provide unparalleled luxury transportation services that exceed expectations through meticulous attention to detail, professional excellence, and unwavering commitment to client satisfaction.
+                  To provide unparalleled luxury transportation services that
+                  exceed expectations through meticulous attention to detail,
+                  professional excellence, and unwavering commitment to client
+                  satisfaction.
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  We strive to make every journey seamless, comfortable, and memorable, whether it's for business, special occasions, or leisure travel. Our mission is to be your trusted partner in luxury transportation.
+                  We strive to make every journey seamless, comfortable, and
+                  memorable, whether it's for business, special occasions, or
+                  leisure travel. Our mission is to be your trusted partner in
+                  luxury transportation.
                 </p>
               </div>
             </div>
@@ -111,44 +118,51 @@ export default function AboutPage() {
                 Our Core Values
               </h2>
               <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-                The principles that guide everything we do and define our commitment to excellence
+                The principles that guide everything we do and define our
+                commitment to excellence
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 {
                   title: "Reliability",
-                  description: "Punctual, dependable service you can count on, every time.",
-                  icon: "🕐"
+                  description:
+                    "Punctual, dependable service you can count on, every time.",
+                  icon: "🕐",
                 },
                 {
                   title: "Quality",
-                  description: "Premium vehicles and exceptional service standards without compromise.",
-                  icon: "⭐"
+                  description:
+                    "Premium vehicles and exceptional service standards without compromise.",
+                  icon: "⭐",
                 },
                 {
                   title: "Innovation",
-                  description: "Embracing technology and modern solutions for enhanced experiences.",
-                  icon: "🚀"
+                  description:
+                    "Embracing technology and modern solutions for enhanced experiences.",
+                  icon: "🚀",
                 },
                 {
                   title: "Professionalism",
-                  description: "Highly trained chauffeurs delivering courteous and discreet service.",
-                  icon: "👔"
+                  description:
+                    "Highly trained chauffeurs delivering courteous and discreet service.",
+                  icon: "👔",
                 },
                 {
                   title: "Safety",
-                  description: "Your security and well-being are our highest priorities.",
-                  icon: "🛡️"
+                  description:
+                    "Your security and well-being are our highest priorities.",
+                  icon: "🛡️",
                 },
                 {
                   title: "Luxury",
-                  description: "Sophisticated comfort and elegance in every detail.",
-                  icon: "💎"
-                }
+                  description:
+                    "Sophisticated comfort and elegance in every detail.",
+                  icon: "💎",
+                },
               ].map((value, index) => (
-                <div 
+                <div
                   key={value.title}
                   className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 animate-fade-in-up"
                   style={{ animationDelay: `${index * 100}ms` }}
@@ -174,10 +188,11 @@ export default function AboutPage() {
                 Our Professional Team
               </h2>
               <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-                Experienced professionals dedicated to providing exceptional service
+                Experienced professionals dedicated to providing exceptional
+                service
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl group">
                 <Image
@@ -203,10 +218,24 @@ export default function AboutPage() {
           </div>
         </section>
 
-        
+        <CTASection
+          title="Ready to Experience Luxury?"
+          description="   Discover our premium fleet and book your next luxury transportation experience with us."
+          button1={{
+            text: "Explore Our Fleet",
+            link: "/fleets",
+            type: "primary",
+          }}
+          button2={{
+            text: "Contact Us",
+            link: "/contact",
+            type: "secondary",
+          }}
+
+        />
       </main>
       {/* <Footer Name={data.Name} email={data.Email} /> */}
-      
+
       {/* <style jsx>{`
         @keyframes fade-in {
           from { opacity: 0; transform: translateY(20px); }
